@@ -1,0 +1,18 @@
+# AetherMCLuckPermsSyncMain - runs on the MAIN server.
+# Opens a small HTTP endpoint that the lobby plugin (AetherMCLuckPermsSyncLobby) reads from.
+# This plugin never changes anything on this server; it only READS LuckPerms data.
+
+# Port to listen on. It must be reachable from the lobby (add a network
+# allocation / open the port in your host panel).
+port: 25599
+
+# 0.0.0.0 = all interfaces. Use a specific IP if the lobby is on a private network.
+bind-address: "0.0.0.0"
+
+# Shared secret. Must be IDENTICAL in AetherMCLuckPermsSyncLobby's config.yml.
+# Use a long random string (16+ characters). The plugin refuses to start with the default.
+key: "CHANGE_ME_TO_A_LONG_RANDOM_STRING"
+
+# Optional: only accept requests from these IPs (the lobby's IP). Empty = any IP with the key.
+allowed-ips: []
+#  - "203.0.113.10"

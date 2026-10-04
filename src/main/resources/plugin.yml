@@ -1,0 +1,7 @@
+name: AetherMCLuckPermsSyncMain
+version: 1.0.0
+main: com.aethermc.luckpermssync.main.AetherMCLuckPermsSyncMain
+api-version: '1.21'
+description: Shares this server's LuckPerms groups and player memberships with the lobby (run on the MAIN server)
+author: AetherMC
+depend: [LuckPerms]
